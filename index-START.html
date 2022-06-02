@@ -15,8 +15,8 @@
   </div>
 
 <script>
-  const speed = document.querySelector('.speed')
-  const bar = speed.querySelector('.speed-bar')
+  const speed = document.querySelector('.speed');
+  const bar = speed.querySelector('.speed-bar');
   const video = document.querySelector('.flex');
 
   function handleBar(e){
@@ -29,7 +29,7 @@
     bar.style.height = height;
     bar.textContent = playbackRate.toFixed(2);
     video.playbackRate = playbackRate;
-    console.log(height)
+    console.log(height);
   }
   speed.addEventListener('mousemove', handleBar);
 </script>
